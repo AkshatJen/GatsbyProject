@@ -13,6 +13,7 @@ const Blogs = ({data}) => {
       <div className="blogposts">
         {blogPosts.map(({ node: post }) => (
           <div key={post.id}>
+            <img alt={post.title} src={post.image.file.url} />
             <Link to={`/blogs/${post.slug}`}>{post.title}</Link>
           </div>
         ))}
