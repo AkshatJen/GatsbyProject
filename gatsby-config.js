@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `GECKO Starter`,
+    description: `A vert freaking awesome website built on JAMStack`,
+    author: `AKSHAT JAIN`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -30,5 +30,13 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `lz0jowdidsxp`,
+        accessToken: `2Xz5TidfgoK9HyACEB3SGmLU_gRjtYtOxICiAdLryN4`
+      }
+    }
   ],
 }
